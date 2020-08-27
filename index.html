@@ -64,6 +64,156 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-08_27" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/27/08_27/" class="article-date">
+  <time datetime="2020-08-27T01:42:06.975Z" itemprop="datePublished">2020-08-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="What-is-Git"><a href="#What-is-Git" class="headerlink" title="What is Git?"></a>What is Git?</h1><ul>
+<li><p>Git 의 탄생</p>
+<ul>
+<li>리누스 토발즈가 git이라는 버전관리 시스템을 만듬 </li>
+</ul>
+</li>
+<li><p>Git의 특징</p>
+<ul>
+<li>빠른속도, 단순한 구조</li>
+<li>분산형 저장소 지원</li>
+<li>비선형적 개발가능 </li>
+</ul>
+</li>
+<li><p>장점</p>
+<ul>
+<li>소스코드 주고받기 없이 동시작업이 가능해서 생산성이 증가</li>
+<li>수정내용들은 commit단위로 관리/배포 그리고 원하는 시점으로 checkout도 가능 </li>
+<li>Branch를 이용해 새로운 기능을 추가할수있고, 성공적으로 개발이 완료되면 Merge하여 반영</li>
+<li>인터넷에 연결이 되어있지 않아도 개발가능</li>
+</ul>
+</li>
+<li><p>클라이언트</p>
+<ul>
+<li>git GUI</li>
+<li>sourcetree</li>
+<li>kraken</li>
+<li>smartGit</li>
+</ul>
+</li>
+<li><p>Git objects</p>
+<ul>
+<li>Blob: 파일 하나의 내용에 대한 정보</li>
+<li>Tree: Blob이나 subtree의 메타데이터(디렉토리 위치/속성/이름)        </li>
+<li>Commit: 커밋 순간의 스냅샷 </li>
+</ul>
+</li>
+<li><p>Set configuration<br>terminal</p>
+<pre><code>  $ git config --global user.name &quot;&#123;github username&#125;&quot;
+  $ git config --global user.email &quot;&#123;github email address&#125;&quot;
+  $ git config --global core.editor &quot;vim&quot;
+  $ git config --global core.pager &quot;cat&quot;
+  $ git config --list</code></pre>
+</li>
+<li><p>Commit Convention</p>
+<ul>
+<li>커밋 제목은 50자 이내로 요약</li>
+<li>제목과 내용사이 한 칸</li>
+<li>prefix 를 사용해 한눈에 커밋의 용도를 알한다<h2 id="Start-Project-with-git-clone"><a href="#Start-Project-with-git-clone" class="headerlink" title="Start Project with git clone"></a>Start Project with git clone</h2><h3 id="clone"><a href="#clone" class="headerlink" title="clone"></a>clone</h3></li>
+</ul>
+</li>
+<li><p>github 에서 repository를 생성</p>
+<pre><code>  $ git clone &#123;repository address&#125;
+  $ git add .
+  $ git commit
+  $ git push</code></pre>
+</li>
+</ul>
+<h1 id="About-Shell-vim-command-for-git"><a href="#About-Shell-vim-command-for-git" class="headerlink" title="About Shell, vim command for git"></a>About Shell, vim command for git</h1><h2 id="Before-Linux"><a href="#Before-Linux" class="headerlink" title="Before Linux"></a>Before Linux</h2><ul>
+<li><p>1965년: 데니스 리치, 켄 톰슨이 PDP-7 기반 어셈블리어로 작성한 UNIX 개발 </p>
+</li>
+<li><p>1973년: 데니스 리치, 켄 톰슨이 C를 개발후, C 기반 UNIX 재작성</p>
+</li>
+<li><p>1984년: 라차드 스톨먼, 오픈 소프트웨어 자유성 확보 위해 GNU 프로젝트 돌입</p>
+<ul>
+<li>GNU == Gnu is Not Unix</li>
+<li>GNU 프로젝트에는 커널이 없었다 </li>
+</ul>
+</li>
+<li><p>Kernel</p>
+<ul>
+<li><p>하드웨어와 응용프로그램을 이어주는 운영체제의 핵심 시스템소프트웨어</p>
+<p><img src="kernel.png" alt="img">    </p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="About-Linux"><a href="#About-Linux" class="headerlink" title="About Linux"></a>About Linux</h2><ul>
+<li><p>리누스 토발즈가 작성한 커널/GNU 프로젝트 라이버리와 도구가 포함된 운영체제</p>
+</li>
+<li><p>PC/모바일/서버/임베디드 시스템 등 다양한 분야에서 활용</p>
+</li>
+<li><p>Redhat / Debian / Ubuntu / Andriod 등 다양한 배포판 존재</p>
+<h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2></li>
+<li><p>운영체제의 커널과 사용자를 이어주는 소프트웨어 </p>
+</li>
+<li><p>유닉스 쉘 </p>
+<ul>
+<li><p>sh(Bourne Shell): Steve Bourne</p>
+</li>
+<li><p>csh: Bill Joy (C언어랑 비슷한 모양)</p>
+</li>
+<li><p>bash(Bourne Again Shell): Brian Fox </p>
+<ul>
+<li>다양한 운영체제에서 기본 쉘</li>
+</ul>
+</li>
+<li><p>zsh: Paul Falstad</p>
+<ul>
+<li><p>sh 확장형 쉘</p>
+<h2 id="Bash"><a href="#Bash" class="headerlink" title="Bash"></a>Bash</h2><h3 id="Sehll-Command-Basic"><a href="#Sehll-Command-Basic" class="headerlink" title="Sehll Command Basic"></a>Sehll Command Basic</h3><p>$ cd documents</p>
+<p>$ mkdir dev # - make directory dev<br>$ cd dev # - change directory<br>$ cd .. # - go up<br>$ pwd # - print working directory</p>
+<p>$ ls<br>$ ls -al</p>
+<p>$ touch hello.py # - create hello.py<br>$ exit # - terminate shell</p>
+<h3 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a>chmod</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>파일의 권한을 성정할 때 사용</p>
+</li>
+<li><p>drwxr-xr-x d or -: directory or file (user)(group)(other) </p>
+<ul>
+<li>r: read</li>
+<li>w: write</li>
+<li>x: execute</li>
+<li>-: no permission<h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h3></li>
+</ul>
+</li>
+<li><p>Vim Basic </p>
+<pre><code>  h,j,k,l - move cursor i - insert mode v - visual mode d - delete y - yank p - paste u
+  undo r - replace $ - move end of line ^ - move start of line :q - quit :q! 
+  quit w/o write(no warning) :wq - write and quit :&#123;number&#125; - move to &#123;number&#125;th line</code></pre>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jeonghoonan.github.io/2020/08/27/08_27/" data-id="ckec5cw3g000148u9cbr3b0ac" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-08_26" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/08/26/08_26/" class="article-date">
@@ -134,7 +284,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/26/08_26/" data-id="ckeaq5vtk0000owu9cre150cr" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/26/08_26/" data-id="ckec5cw2x000048u9eu4c0fat" class="article-share-link">Share</a>
       
       
     </footer>
@@ -171,7 +321,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/10/java/" data-id="ckeaq5vud0003owu9h5pm3in6" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/10/java/" data-id="ckec5cw3l000248u9bkbf5no0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -211,7 +361,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/07/My-new-hexo-post/" data-id="ckeaq5vu30002owu9h18e7nw5" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/07/My-new-hexo-post/" data-id="ckec5cw3r000448u9agad5lon" class="article-share-link">Share</a>
       
       
     </footer>
@@ -260,7 +410,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/07/hello-world/" data-id="ckeaq5vtz0001owu98v803tg4" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/07/hello-world/" data-id="ckec5cw3p000348u98xzz0f3o" class="article-share-link">Share</a>
       
       
     </footer>
@@ -299,6 +449,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/08/27/08_27/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2020/08/26/08_26/">(no title)</a>
