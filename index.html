@@ -123,9 +123,11 @@
 <ul>
 <li>커밋 제목은 50자 이내로 요약</li>
 <li>제목과 내용사이 한 칸</li>
-<li>prefix 를 사용해 한눈에 커밋의 용도를 알한다<h2 id="Start-Project-with-git-clone"><a href="#Start-Project-with-git-clone" class="headerlink" title="Start Project with git clone"></a>Start Project with git clone</h2><h3 id="clone"><a href="#clone" class="headerlink" title="clone"></a>clone</h3></li>
+<li>prefix 를 사용해 한눈에 커밋의 용도를 알한다</li>
 </ul>
 </li>
+</ul>
+<h2 id="Start-Project-with-git-clone"><a href="#Start-Project-with-git-clone" class="headerlink" title="Start Project with git clone"></a>Start Project with git clone</h2><h3 id="clone"><a href="#clone" class="headerlink" title="clone"></a>clone</h3><ul>
 <li><p>github 에서 repository를 생성</p>
 <pre><code>  $ git clone &#123;repository address&#125;
   $ git add .
@@ -134,66 +136,62 @@
 </li>
 </ul>
 <h1 id="About-Shell-vim-command-for-git"><a href="#About-Shell-vim-command-for-git" class="headerlink" title="About Shell, vim command for git"></a>About Shell, vim command for git</h1><h2 id="Before-Linux"><a href="#Before-Linux" class="headerlink" title="Before Linux"></a>Before Linux</h2><ul>
-<li><p>1965년: 데니스 리치, 켄 톰슨이 PDP-7 기반 어셈블리어로 작성한 UNIX 개발 </p>
-</li>
-<li><p>1973년: 데니스 리치, 켄 톰슨이 C를 개발후, C 기반 UNIX 재작성</p>
-</li>
-<li><p>1984년: 라차드 스톨먼, 오픈 소프트웨어 자유성 확보 위해 GNU 프로젝트 돌입</p>
-<ul>
+<li>1965년 : 데니스 리치, 켄 톰슨이 PDP-7 기반 어셈블리어로 작성한 UNIX 개발 </li>
+<li>1973년 : 데니스 리치, 켄 톰슨이 C를 개발후, C 기반 UNIX 재작성</li>
+<li>1984년 : 라차드 스톨먼, 오픈 소프트웨어 자유성 확보 위해 GNU 프로젝트 돌입<ul>
 <li>GNU == Gnu is Not Unix</li>
 <li>GNU 프로젝트에는 커널이 없었다 </li>
 </ul>
 </li>
-<li><p>Kernel</p>
-<ul>
-<li><p>하드웨어와 응용프로그램을 이어주는 운영체제의 핵심 시스템소프트웨어</p>
-<p><img src="kernel.png" alt="img">    </p>
-</li>
+<li>Kernel<ul>
+<li>하드웨어와 응용프로그램을 이어주는 운영체제의 핵심 시스템소프트웨어</li>
 </ul>
 </li>
 </ul>
 <h2 id="About-Linux"><a href="#About-Linux" class="headerlink" title="About Linux"></a>About Linux</h2><ul>
-<li><p>리누스 토발즈가 작성한 커널/GNU 프로젝트 라이버리와 도구가 포함된 운영체제</p>
-</li>
-<li><p>PC/모바일/서버/임베디드 시스템 등 다양한 분야에서 활용</p>
-</li>
-<li><p>Redhat / Debian / Ubuntu / Andriod 등 다양한 배포판 존재</p>
-<h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2></li>
-<li><p>운영체제의 커널과 사용자를 이어주는 소프트웨어 </p>
-</li>
-<li><p>유닉스 쉘 </p>
-<ul>
-<li><p>sh(Bourne Shell): Steve Bourne</p>
-</li>
-<li><p>csh: Bill Joy (C언어랑 비슷한 모양)</p>
-</li>
-<li><p>bash(Bourne Again Shell): Brian Fox </p>
-<ul>
+<li>리누스 토발즈가 작성한 커널/GNU 프로젝트 라이버리와 도구가 포함된 운영체제</li>
+<li>PC/모바일/서버/임베디드 시스템 등 다양한 분야에서 활용</li>
+<li>Redhat / Debian / Ubuntu / Andriod 등 다양한 배포판 존재</li>
+</ul>
+<h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2><ul>
+<li>운영체제의 커널과 사용자를 이어주는 소프트웨어 </li>
+<li>유닉스 쉘 <ul>
+<li>sh(Bourne Shell): Steve Bourne</li>
+<li>csh: Bill Joy (C언어랑 비슷한 모양)</li>
+<li>bash(Bourne Again Shell): Brian Fox <ul>
 <li>다양한 운영체제에서 기본 쉘</li>
 </ul>
 </li>
-<li><p>zsh: Paul Falstad</p>
-<ul>
-<li><p>sh 확장형 쉘</p>
-<h2 id="Bash"><a href="#Bash" class="headerlink" title="Bash"></a>Bash</h2><h3 id="Sehll-Command-Basic"><a href="#Sehll-Command-Basic" class="headerlink" title="Sehll Command Basic"></a>Sehll Command Basic</h3><p>$ cd documents</p>
-<p>$ mkdir dev # - make directory dev<br>$ cd dev # - change directory<br>$ cd .. # - go up<br>$ pwd # - print working directory</p>
-<p>$ ls<br>$ ls -al</p>
-<p>$ touch hello.py # - create hello.py<br>$ exit # - terminate shell</p>
-<h3 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a>chmod</h3></li>
+<li>zsh: Paul Falstad<ul>
+<li>sh 확장형 쉘</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>파일의 권한을 성정할 때 사용</p>
-</li>
-<li><p>drwxr-xr-x d or -: directory or file (user)(group)(other) </p>
-<ul>
+</ul>
+<h2 id="Bash"><a href="#Bash" class="headerlink" title="Bash"></a>Bash</h2><h3 id="Sehll-Command-Basic"><a href="#Sehll-Command-Basic" class="headerlink" title="Sehll Command Basic"></a>Sehll Command Basic</h3><pre><code>    $ cd documents
+
+    $ mkdir dev # - make directory dev
+    $ cd dev # - change directory
+    $ cd .. # - go up
+    $ pwd # - print working directory
+
+    $ ls
+    $ ls -al
+
+    $ touch hello.py # - create hello.py
+    $ exit # - terminate shell</code></pre>
+<h3 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a>chmod</h3><ul>
+<li>파일의 권한을 성정할 때 사용</li>
+<li>drwxr-xr-x d or -: directory or file (user)(group)(other) <ul>
 <li>r: read</li>
 <li>w: write</li>
 <li>x: execute</li>
-<li>-: no permission<h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h3></li>
+<li>-: no permission</li>
 </ul>
 </li>
+</ul>
+<h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h3><ul>
 <li><p>Vim Basic </p>
 <pre><code>  h,j,k,l - move cursor i - insert mode v - visual mode d - delete y - yank p - paste u
   undo r - replace $ - move end of line ^ - move start of line :q - quit :q! 
@@ -204,7 +202,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/27/08_27/" data-id="ckec5cw3g000148u9cbr3b0ac" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/27/08_27/" data-id="ckec5kfkg0001qcu9dj6014wd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -284,7 +282,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/26/08_26/" data-id="ckec5cw2x000048u9eu4c0fat" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/26/08_26/" data-id="ckec5kfkj0002qcu9f06lh6v9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -321,7 +319,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/10/java/" data-id="ckec5cw3l000248u9bkbf5no0" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/10/java/" data-id="ckec5kfkm0004qcu9e69v7m7n" class="article-share-link">Share</a>
       
       
     </footer>
@@ -361,7 +359,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/07/My-new-hexo-post/" data-id="ckec5cw3r000448u9agad5lon" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/07/My-new-hexo-post/" data-id="ckec5kfkk0003qcu9dc0x5bxm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -410,7 +408,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/07/hello-world/" data-id="ckec5cw3p000348u98xzz0f3o" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/07/hello-world/" data-id="ckec5kfk10000qcu93iopgeuo" class="article-share-link">Share</a>
       
       
     </footer>
