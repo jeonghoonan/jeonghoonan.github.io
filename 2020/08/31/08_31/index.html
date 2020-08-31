@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Study083120 | 나의 좌충우돌 JAVA 여정</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="객체지향 프로그래밍(I)객체지향 프로그래밍 (Object Oriented Programming) 프로그램을 명령어(절차지향 프로그램) 목록으로 보지 않는다  객체들을 잘 짜여지게 한다  각각의 객체는 메세지(다양함) 를 주고받고, 데이터를 처리한다  객체 지향 프로그램은 객체를 정의하고 객체간의 협력을 구현한 프로그램이다  기본 구성 요소 클래스 (Clas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Study083120">
+<meta property="og:url" content="https://jeonghoonan.github.io/2020/08/31/08_31/index.html">
+<meta property="og:site_name" content="나의 좌충우돌 JAVA 여정">
+<meta property="og:description" content="객체지향 프로그래밍(I)객체지향 프로그래밍 (Object Oriented Programming) 프로그램을 명령어(절차지향 프로그램) 목록으로 보지 않는다  객체들을 잘 짜여지게 한다  각각의 객체는 메세지(다양함) 를 주고받고, 데이터를 처리한다  객체 지향 프로그램은 객체를 정의하고 객체간의 협력을 구현한 프로그램이다  기본 구성 요소 클래스 (Clas">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-31T01:18:24.940Z">
+<meta property="article:modified_time" content="2020-08-31T01:26:26.382Z">
+<meta property="article:author" content="JeongHoon">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="나의 좌충우돌 JAVA 여정" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">나의 좌충우돌 JAVA 여정</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://jeonghoonan.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-08_31" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/31/08_31/" class="article-date">
+  <time datetime="2020-08-31T01:18:24.940Z" itemprop="datePublished">2020-08-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Study083120
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="객체지향-프로그래밍-I"><a href="#객체지향-프로그래밍-I" class="headerlink" title="객체지향 프로그래밍(I)"></a>객체지향 프로그래밍(I)</h1><h2 id="객체지향-프로그래밍-Object-Oriented-Programming"><a href="#객체지향-프로그래밍-Object-Oriented-Programming" class="headerlink" title="객체지향 프로그래밍 (Object Oriented Programming)"></a><u>객체지향 프로그래밍 (Object Oriented Programming)</U></h2><ul>
+<li>프로그램을 명령어(절차지향 프로그램) 목록으로 보지 않는다 </li>
+<li>객체들을 잘 짜여지게 한다 </li>
+<li>각각의 객체는 메세지(다양함) 를 주고받고, 데이터를 처리한다 </li>
+<li>객체 지향 프로그램은 객체를 정의하고 객체간의 협력을 구현한 프로그램이다</li>
+</ul>
+<h2 id="기본-구성-요소"><a href="#기본-구성-요소" class="headerlink" title="기본 구성 요소"></a>기본 구성 요소</h2><ul>
+<li><p>클래스 (Class)</p>
+<ul>
+<li>같은 종류의 집단에(집단이 있어야 한다) 속하는 속성과 행위를 정의한다.( 클래스는 어떤 값들을 가지고 있지않다 / 정의하고 있는거다) <pre><code>    설계를 하는것이다. 정의만 한다</code></pre>
+</li>
+<li>속성 : 속성에 데이터가 들어간거. 행위 : 어떻게 처리할것인지  </li>
+<li>클래스는 다른 클래스 또는 외부요소와 독립적으로 디자인해야한다</li>
+<li>다른 객체와 interect 해야한다. 하지만 최대한 독립적으로 실행되게 해야한다</li>
+</ul>
+</li>
+<li><p>객체 (Object)</p>
+<ul>
+<li>클래스의 인스턴으로, 실제로 메모리상에 값이 할당이 된다</li>
+<li>클래스에 정의된 행위를 수행한다</li>
+</ul>
+</li>
+<li><p>메소드 (Method)</p>
+<ul>
+<li>클래스로 부터 생성된 객체를 사용하는 법</li>
+<li>메소드는 한 객체의 속성을 조작하는데 사용</li>
+</ul>
+</li>
+<li><p>특징 : OOP is A.P.I.E</p>
+<ul>
+<li>Abstraction (추상화) - 자료 표현을 추상적으로 나타내는 추상 자료형을 사용한다</li>
+<li>Polymorphism (다형성)  - 오버로딩과 오버라이딩을 하여 하나의 메소드명으로 다양한 동작을 구현한다<br>println(int/double/string/float - 이것저것 올수 있는 이유는 println이 오버로딩이 된다</li>
+<li>Inheritence (상속)  - 부모 클래스로부터 속성과 메소드를 상속받아 사용가능<br>하나의 클래스를 만들고, 또다른 클래스를 만들때 부모클래스에서 자식 클래스로 상속이 가능하다</li>
+<li>Encapusulation  (캡슐화) 사용자에게 불필요한 정보를 은닉/보호 해야 한다</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jeonghoonan.github.io/2020/08/31/08_31/" data-id="ckehueg280003lku9hbo2huar" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/08/30/08_30/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Study083020</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/08/31/08_31/">Study083120</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/30/08_30/">Study083020</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/29/08_29/">Study082920</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/28/08_28/">Study082820</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/27/08_27/">Study082720</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 JeongHoon<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
