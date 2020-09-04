@@ -64,6 +64,96 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-09_04" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/04/09_04/" class="article-date">
+  <time datetime="2020-09-04T01:05:53.987Z" itemprop="datePublished">2020-09-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/04/09_04/">Study090420</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="객체지향-프로그래밍-V"><a href="#객체지향-프로그래밍-V" class="headerlink" title="객체지향 프로그래밍(V)"></a>객체지향 프로그래밍(V)</h1><h2 id="다형성-Polymorphism"><a href="#다형성-Polymorphism" class="headerlink" title="다형성 (Polymorphism)"></a><u>다형성 (Polymorphism)</u></h2><h3 id="특징"><a href="#특징" class="headerlink" title="특징"></a>특징</h3><ul>
+<li><p>부모 클래스 타입으로 자식 클래스 객체를 참조하는 특징 </p>
+<pre><code>  public class Foo &#123;
+      public void methodA() &#123;
+          return;
+      &#125;
+  &#125;
+
+  public class Bar extends Foo &#123;
+      public void methodB() &#123;
+          return;
+      &#125;
+  &#125;
+
+  public class Main &#123;
+      public static void main(String args[]) &#123;
+          Bar bar = new Bar(); // 자식 객체를 생성
+
+          Foo foo = (Foo)bar; // 부모 클래스 타입으로 자식 객체를 받음 
+      &#125;
+  &#125;</code></pre>
+</li>
+<li><p>부모 클래스로 자식 클래스를 참조한 경우, 자식 클래스의 메소드는 사용할수없다</p>
+<pre><code>  public class Main &#123;
+      public static void main(String args[]) &#123;
+          Bar bar = new Bar();
+          Foo foo = (Foo)bar;
+
+          foo.methodA(); // works
+          // foo.methodB(); // error
+      &#125;
+  &#125;</code></pre>
+</li>
+<li><p>멤버 변수의 재정의는 선언된 객체의 타입을 따른다(문법적으로 본다)</p>
+</li>
+<li><p>메소드 오버라이딩은 메모리상의 객체 타입을 따른다(실체 객체로 본다)</p>
+<ul>
+<li>(가상 메소드 호출: Virtual method call)</li>
+</ul>
+</li>
+<li><p>공변 반환 타입(Covariant return type)              </p>
+<pre><code>  class Foo &#123;
+      public Foo getInstance() &#123;
+          return this;
+      &#125;
+  &#125;
+
+  class Bar extends Foo &#123; // 같이 변화는 공변 변홥 타입
+      public Bar getInstance() &#123; // Foo 대신 Bar로 리턴 가능
+          return this;
+      &#125;
+  &#125;</code></pre>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jeonghoonan.github.io/2020/09/04/09_04/" data-id="ckenjlw4s000850u9dzqghj9h" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-09_03" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/09/03/09_03/" class="article-date">
@@ -160,7 +250,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/03/09_03/" data-id="ckem427pr0009p0u9ggcf4kxt" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/03/09_03/" data-id="ckenjlw4p000750u954t17dg9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -251,7 +341,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/02/09_02/" data-id="ckem427pp0007p0u97pjl3sjj" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/02/09_02/" data-id="ckenjlw4w000a50u98jbt51oy" class="article-share-link">Share</a>
       
       
     </footer>
@@ -400,7 +490,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/01/09_01/" data-id="ckem427pn0006p0u949upa0xm" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/01/09_01/" data-id="ckenjlw4l000550u9d40o8w3p" class="article-share-link">Share</a>
       
       
     </footer>
@@ -505,7 +595,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/31/08_31/" data-id="ckem427pl0004p0u9cyphf2dy" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/31/08_31/" data-id="ckenjlw4g000350u9ag7j71zx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -610,7 +700,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/30/08_30/" data-id="ckem427pj0003p0u9adpq8ozb" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/30/08_30/" data-id="ckenjlw4j000450u97fdpbh73" class="article-share-link">Share</a>
       
       
     </footer>
@@ -769,7 +859,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/29/08_29/" data-id="ckem427pm0005p0u9f5858298" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/29/08_29/" data-id="ckenjlw4n000650u97gok2mxm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -945,7 +1035,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/28/08_28/" data-id="ckem427ph0002p0u938fq5fmj" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/28/08_28/" data-id="ckenjlw3r000050u9327xhxvo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1103,7 +1193,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/27/08_27/" data-id="ckem427oy0000p0u966fw8pot" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/27/08_27/" data-id="ckenjlw49000150u9gv3lde6c" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1193,44 +1283,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/26/08_26/" data-id="ckem427pc0001p0u931y293j2" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-java" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/08/10/java/" class="article-date">
-  <time datetime="2020-08-10T02:43:12.540Z" itemprop="datePublished">2020-08-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/10/java/">My Blog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to this Blog. This is my second post. I do not know what is going on but here I am!</p>
-<h2 id="Introduce"><a href="#Introduce" class="headerlink" title="Introduce"></a>Introduce</h2><h3 id="Briefing"><a href="#Briefing" class="headerlink" title="Briefing"></a>Briefing</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name: JeongHoon An</span><br><span class="line">Age: 25</span><br><span class="line">From: Daegu, South Korea</span><br><span class="line">Hobby: Computer game </span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/10/java/" data-id="ckem427pt000ap0u94iw23uiy" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/26/08_26/" data-id="ckenjlw4d000250u98mqshubi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1276,6 +1329,10 @@
       <ul>
         
           <li>
+            <a href="/2020/09/04/09_04/">Study090420</a>
+          </li>
+        
+          <li>
             <a href="/2020/09/03/09_03/">Study090320</a>
           </li>
         
@@ -1289,10 +1346,6 @@
         
           <li>
             <a href="/2020/08/31/08_31/">Study083120</a>
-          </li>
-        
-          <li>
-            <a href="/2020/08/30/08_30/">Study083020</a>
           </li>
         
       </ul>
