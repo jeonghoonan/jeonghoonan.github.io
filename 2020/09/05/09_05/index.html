@@ -5,13 +5,17 @@
   
 
   
-  <title>Archives: 2020/9 | 나의 좌충우돌 JAVA 여정</title>
+  <title>Study090520 | 나의 좌충우돌 JAVA 여정</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="나의 좌충우돌 JAVA 여정">
-<meta property="og:url" content="https://jeonghoonan.github.io/archives/2020/09/index.html">
+  <meta name="description" content="OOP Advanced(I)추상 클래스 (Abstract Class)추상 클래스 일부 메소드가 구현되지 않고, 선언만 되어있는 클래스 자식 클래스에서 이것을 반드시 구현하게끔 강제하는것 필요한 모든 클래스가 구현될수 있도록 하여 안정성을 높임     ###선언  abstract 키워드를 이용해 클래스 &#x2F; 메소드를 선언        abstract class">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Study090520">
+<meta property="og:url" content="https://jeonghoonan.github.io/2020/09/05/09_05/index.html">
 <meta property="og:site_name" content="나의 좌충우돌 JAVA 여정">
+<meta property="og:description" content="OOP Advanced(I)추상 클래스 (Abstract Class)추상 클래스 일부 메소드가 구현되지 않고, 선언만 되어있는 클래스 자식 클래스에서 이것을 반드시 구현하게끔 강제하는것 필요한 모든 클래스가 구현될수 있도록 하여 안정성을 높임     ###선언  abstract 키워드를 이용해 클래스 &#x2F; 메소드를 선언        abstract class">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-05T04:28:44.236Z">
+<meta property="article:modified_time" content="2020-09-05T04:49:25.177Z">
 <meta property="article:author" content="JeongHoon">
 <meta name="twitter:card" content="summary">
   
@@ -62,116 +66,79 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/09/05/09_05/" class="archive-article-date">
-  <time datetime="2020-09-05T04:28:44.236Z" itemprop="datePublished">Sep 5</time>
+        <section id="main"><article id="post-09_05" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/05/09_05/" class="article-date">
+  <time datetime="2020-09-05T04:28:44.236Z" itemprop="datePublished">2020-09-05</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/05/09_05/">Study090520</a>
+    <h1 class="article-title" itemprop="name">
+      Study090520
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/09/04/09_04/" class="archive-article-date">
-  <time datetime="2020-09-04T01:05:53.987Z" itemprop="datePublished">Sep 4</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/04/09_04/">Study090420</a>
-    </h1>
-  
+        <h1 id="OOP-Advanced-I"><a href="#OOP-Advanced-I" class="headerlink" title="OOP Advanced(I)"></a>OOP Advanced(I)</h1><h2 id="추상-클래스-Abstract-Class"><a href="#추상-클래스-Abstract-Class" class="headerlink" title="추상 클래스 (Abstract Class)"></a><u>추상 클래스 (Abstract Class)</u></h2><h3 id="추상-클래스"><a href="#추상-클래스" class="headerlink" title="추상 클래스"></a>추상 클래스</h3><ul>
+<li>일부 메소드가 구현되지 않고, 선언만 되어있는 클래스<ul>
+<li>자식 클래스에서 이것을 반드시 구현하게끔 강제하는것</li>
+<li>필요한 모든 클래스가 구현될수 있도록 하여 안정성을 높임 </li>
+</ul>
+</li>
+</ul>
+<p>###선언</p>
+<ul>
+<li><p>abstract 키워드를 이용해 클래스 / 메소드를 선언     </p>
+<pre><code>  abstract class AbstractFoo &#123;
+      public void method() &#123;
+          return;
+      &#125;
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/09/03/09_03/" class="archive-article-date">
-  <time datetime="2020-09-03T00:54:54.563Z" itemprop="datePublished">Sep 3</time>
-</a>
+      public abstract void abstractMethod(); // 세미콜른을 잊으면, 선엄만 하고 구현하지 않는다
+  &#125;</code></pre>
+<ul>
+<li>추상 클래스는 객체 생성은 불가하지만 구현된 자식 클래스의 객체는 받을수있다</li>
+</ul>
+</li>
+</ul>
+<h3 id="Abstract-Stack"><a href="#Abstract-Stack" class="headerlink" title="Abstract Stack"></a>Abstract Stack</h3><ul>
+<li>is_empty(): Checks if this Stack is empty</li>
+<li>push(): Push an element onto the Stack</li>
+<li>pop(): Pop an element of the Stack</li>
+<li>peek(): Discover the value of the item on top of the Stack</li>
+</ul>
+
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/03/09_03/">Study090320</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/09/02/09_02/" class="archive-article-date">
-  <time datetime="2020-09-02T01:02:21.593Z" itemprop="datePublished">Sep 2</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jeonghoonan.github.io/2020/09/05/09_05/" data-id="ckep6voet0008yku94ug7128q" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/02/09_02/">Study090220</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/09/01/09_01/" class="archive-article-date">
-  <time datetime="2020-09-01T01:21:43.593Z" itemprop="datePublished">Sep 1</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/01/09_01/">Study090120</a>
-    </h1>
-  
-
-    </header>
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/09/04/09_04/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Study090420</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
