@@ -64,6 +64,129 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-09_13" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/13/09_13/" class="article-date">
+  <time datetime="2020-09-13T01:06:20.888Z" itemprop="datePublished">2020-09-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/13/09_13/">Study091320</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="OOP-Advanced-IV"><a href="#OOP-Advanced-IV" class="headerlink" title="OOP Advanced(IV)"></a>OOP Advanced(IV)</h1><h2 id="제네릭-Generics"><a href="#제네릭-Generics" class="headerlink" title="제네릭 (Generics)"></a>제네릭 (Generics)</h2><ul>
+<li>대상 객체의 타입을 입력받아서 사용하는 형식</li>
+<li>미리 사용할 수 있는 타입을 명시해서 컴파일 타임에 체크 가능<ul>
+<li>입력을 Object 로 할수도 있으나, 런타임에 instanceof 로 객체를 체크해야한다</li>
+<li>제네릭을 사용할 경우 이러한 과정 없이 간결하게 코드 작성을 할수있다</li>
+</ul>
+</li>
+</ul>
+<h3 id="제네릭-클래스"><a href="#제네릭-클래스" class="headerlink" title="제네릭 클래스"></a>제네릭 클래스</h3><h5 id="타입"><a href="#타입" class="headerlink" title="타입"></a>타입</h5><ul>
+<li><p>클래스와 인터페이스에 제네릭이 적용된 타입</p>
+</li>
+<li><p>클래스를 선언할 때에는 타입이 알려지지 않으며, 타입 파라미터를 사용 </p>
+</li>
+<li><p>T : 타입 파라미터</p>
+<pre><code>  public class GenericClass&lt;T&gt; &#123;
+      ...
+  &#125;</code></pre>
+</li>
+<li><p>K, V 타입 파라미터 </p>
+<pre><code>  public class HashMap&lt;K,V&gt; &#123; // K, V: 타입 파라미터
+      ...
+  &#125;</code></pre>
+</li>
+<li><p>실제로 사용될때 타입 파라미터에 자료형을 입력받는다 </p>
+</li>
+</ul>
+<h3 id="주의점"><a href="#주의점" class="headerlink" title="주의점"></a>주의점</h3><ul>
+<li>static 멤버 변수는 타입 파라미터를 사용 할수 없다 </li>
+<li>정적 메소드에도 타입 파라미터를 사용할수 없다</li>
+<li>new 키워드를 사용하여 객체 생성을 할수없다</li>
+<li>instance of 의 피연산자로 사용할수없다  </li>
+</ul>
+<h3 id="상속"><a href="#상속" class="headerlink" title="상속"></a>상속</h3><ul>
+<li>부모 클래스 또는 인터페이스에 선언한 타입 파라미너터는 반드시 자식에서도 선언해야한다</li>
+<li>자식 클래스에서 추가적인 타입 파라미터를 선언할수있다 </li>
+</ul>
+<h3 id="제한"><a href="#제한" class="headerlink" title="제한"></a>제한</h3><ul>
+<li><p>extends 를 이용하여 파라미터 타입을 제한할수있다</p>
+<ul>
+<li>인터페이스의 경우에도 extends 키워드를 사용한다</li>
+<li>클래스와 인터페이스를 동시에 재약하려먼 &amp; 으로 연결한다 </li>
+</ul>
+</li>
+<li><p>제한한 자료형의 자식 클래스는 모두 사용할수있다     </p>
+<pre><code>  class Generic&lt;T extends Number&gt; &#123;
+      ...
+  &#125;
+
+  class Generic&lt;T extends Number &amp; Cloneable&gt; &#123;
+      ...
+  &#125;</code></pre>
+<h3 id="제네릭-메소드"><a href="#제네릭-메소드" class="headerlink" title="제네릭 메소드"></a>제네릭 메소드</h3><h4 id="메소드에-선언된-제네릭"><a href="#메소드에-선언된-제네릭" class="headerlink" title="메소드에 선언된 제네릭"></a>메소드에 선언된 제네릭</h4><ul>
+<li><p>메소드의 리턴 타입 앞에 타입 파라미터 변수를 선언하여 사용</p>
+</li>
+<li><p>메소드에 선언된 제네릭은 정적 메소드에도 사용가능</p>
+</li>
+<li><p>와일드카드</p>
+<ul>
+<li><p>&lt;?&gt; =&gt; &lt;? extends ObjectL&gt; 와 동일</p>
+</li>
+<li><p>&lt;? extends T&gt; =&gt; 와일드카드의 상한을 제한</p>
+</li>
+<li><? super T> => 와일드 카드의 하한을 제한 
+
+  class Foo {
+      ...
+  }
+
+  class Bar extends Foo {
+      ...
+  }
+
+  class Generic<T> {
+      ...
+  }
+
+  class WildCard {
+      public void method1(Generic<?><p> x) {}</p>
+<pre><code>  public void method2(Generic&lt;? extends Foo&gt; x) &#123;&#125;
+  public void method3(Generic&lt;? super Bar&gt; x) &#123;&#125;</code></pre>
+<p>  }</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jeonghoonan.github.io/2020/09/13/09_13/" data-id="ckf0ep6ro000evwu98p8nb3ke" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-09_10" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/09/10/09_10/" class="article-date">
@@ -116,7 +239,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/10/09_10/" data-id="ckew5yhjt000dg4u9b62nfeqx" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/10/09_10/" data-id="ckf0ep6rn000dvwu9bbzf030n" class="article-share-link">Share</a>
       
       
     </footer>
@@ -191,7 +314,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/08/09_08/" data-id="ckew5yhjl000bg4u96gb8cl82" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/08/09_08/" data-id="ckf0ep6rm000cvwu93vnce3l9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -264,7 +387,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/06/09_06/" data-id="ckew5yhjj000ag4u9atuwbwsd" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/06/09_06/" data-id="ckf0ep6rj000bvwu96s9f1sox" class="article-share-link">Share</a>
       
       
     </footer>
@@ -327,7 +450,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/05/09_05/" data-id="ckew5yhjd0007g4u9901b8t7k" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/05/09_05/" data-id="ckf0ep6ri000avwu9at5tcvgb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -428,7 +551,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/04/09_04/" data-id="ckew5yhjp000cg4u979pv1uij" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/04/09_04/" data-id="ckf0ep6rg0009vwu9dsgjbf3e" class="article-share-link">Share</a>
       
       
     </footer>
@@ -534,7 +657,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/03/09_03/" data-id="ckew5yhjh0009g4u9a5x30r3h" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/03/09_03/" data-id="ckf0ep6rf0008vwu996tm774g" class="article-share-link">Share</a>
       
       
     </footer>
@@ -625,7 +748,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/02/09_02/" data-id="ckew5yhjf0008g4u9fwr3c137" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/02/09_02/" data-id="ckf0ep6re0007vwu91fx5fooj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -774,7 +897,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/01/09_01/" data-id="ckew5yhjb0006g4u9bryde89l" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/01/09_01/" data-id="ckf0ep6rd0006vwu99qapgpef" class="article-share-link">Share</a>
       
       
     </footer>
@@ -879,112 +1002,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/31/08_31/" data-id="ckew5yhj60004g4u96faia6ti" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-08_30" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/08/30/08_30/" class="article-date">
-  <time datetime="2020-08-30T04:08:37.460Z" itemprop="datePublished">2020-08-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/30/08_30/">Study083020</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="자바문법-기초-III"><a href="#자바문법-기초-III" class="headerlink" title="자바문법 기초(III)"></a>자바문법 기초(III)</h1><h2 id="배열-Arrays"><a href="#배열-Arrays" class="headerlink" title="배열 (Arrays)"></a><u>배열 (Arrays)</u></h2><h3 id="배열의-특성"><a href="#배열의-특성" class="headerlink" title="배열의 특성"></a>배열의 특성</h3><ul>
-<li>하나의 변수로 여러개의 값을 다룰 수 있다.</li>
-<li>동일 자료 형만 다룰 수 있다.</li>
-<li>한번 생성한 배열의 크기는 변하지 않는다</li>
-<li>배열에 속한 값은 메모리에 연속으로 위치한다.</li>
-</ul>
-<h3 id="배열의-선언"><a href="#배열의-선언" class="headerlink" title="배열의 선언"></a>배열의 선언</h3><ul>
-<li>int[] intArray; // 자료형[] 변수명; </li>
-<li>int integerArray[]; // 자료형 변수명[];</li>
-</ul>
-<h3 id="배열의-생성"><a href="#배열의-생성" class="headerlink" title="배열의 생성"></a>배열의 생성</h3><ul>
-<li>int[] intArray = new int[10]; <br>intArray[0] = 4; <br>intArray[1] = 10;</li>
-</ul>
-<h3 id="배열과-반복문"><a href="#배열과-반복문" class="headerlink" title="배열과 반복문"></a>배열과 반복문</h3><ul>
-<li><p>인덱스를 이용한 배열</p>
-<pre><code>  float[] floatArray = new float[10];
-  for (int i = 0; i &lt; floatArray.length; i++) &#123;
-  floatArray[i] = i * 0.5;
-  &#125;</code></pre>
-</li>
-<li><p>for 문 이용한 배열</p>
-<pre><code>  int[] intArray = &#123;4, 5, 1, 2, 7, 5&#125;;
-  for (int value: intArray) &#123;
-  System.out.println(value);
-  &#125;</code></pre>
-</li>
-</ul>
-<h3 id="배열-크기-변경"><a href="#배열-크기-변경" class="headerlink" title="배열 크기 변경"></a>배열 크기 변경</h3><ul>
-<li><p>배열의 크기는 변경할수 없으므로 새로운 배열을 만들고 데이터를 옮겨야한다.</p>
-<pre><code>  int[] src = &#123;1, 2, 3, 4, 5&#125;;
-  int[] dst = new int[10];
-  for(int i = 0; i &lt; source.length; i++) &#123;
-  dst[i] = src[i];
-  &#125;
-
-  int[] src = &#123;1, 2, 3, 4, 5&#125;;
-  int[] dst = new int[10];
-  System.arraycopy(src, 0, dst, 0, src.length);</code></pre>
-</li>
-</ul>
-<h2 id="다차원-배열-N-D-Arrays"><a href="#다차원-배열-N-D-Arrays" class="headerlink" title="다차원 배열 (N-D Arrays)"></a><u>다차원 배열 (N-D Arrays)</u></h2><ul>
-<li><p>배열을 담고 있는 배열 </p>
-</li>
-<li><p>선언</p>
-<pre><code>  int[] array2D[];
-  int[][] array2D;
-  int array2D[][];</code></pre>
-</li>
-<li><p>생성 : 여러 차원의 배열을 동시에 생성</p>
-<pre><code>  int[][] array2D = new int[5][10];</code></pre>
-</li>
-<li><p>초기화</p>
-<pre><code>  int[][] array2D = &#123;&#123;3, 5, 1, 20, 65&#125;,
-                           &#123;5, 2, 6&#125;, // length may vary
-                           &#123;10, 3, 5, 67, 3&#125;&#125;;</code></pre>
-</li>
-<li><p>배열과 반복문</p>
-<ul>
-<li><p>인덱스를 이용한 배열</p>
-<pre><code>  int[][] array2D = new int[10][10];
-  for (int i = 0; i &lt; array2D.length; i++) &#123;
-    for (int j = 0; j &lt; array2D[i].length; j++) &#123;
-      array2D[i][j] = i * j;
-    &#125;
-  &#125;</code></pre>
-</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/30/08_30/" data-id="ckew5yhj80005g4u95th685ax" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/31/08_31/" data-id="ckf0ep6rb0005vwu961k05ds9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1030,6 +1048,10 @@
       <ul>
         
           <li>
+            <a href="/2020/09/13/09_13/">Study091320</a>
+          </li>
+        
+          <li>
             <a href="/2020/09/10/09_10/">Study091020</a>
           </li>
         
@@ -1043,10 +1065,6 @@
         
           <li>
             <a href="/2020/09/05/09_05/">Study090520</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/04/09_04/">Study090420</a>
           </li>
         
       </ul>
