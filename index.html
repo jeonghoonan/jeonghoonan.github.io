@@ -64,6 +64,97 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-09_22" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/22/09_22/" class="article-date">
+  <time datetime="2020-09-22T05:02:04.043Z" itemprop="datePublished">2020-09-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/22/09_22/">Study092220</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="자료형-Data-Types"><a href="#자료형-Data-Types" class="headerlink" title="자료형(Data Types)"></a>자료형(Data Types)</h1><p><img src="DataType1.PNG" alt="img"><br><a target="_blank" rel="noopener" href="https://m.blog.naver.com/sharonichoya/220339079484">출처</a></p>
+<h2 id="구조"><a href="#구조" class="headerlink" title="구조"></a>구조</h2><ul>
+<li><p>원시 자료형(Primitive)</p>
+<ul>
+<li>문자형 (char)</li>
+<li>정수형 (short, int, long)</li>
+<li>실수형 (float, double)</li>
+<li>void</li>
+</ul>
+</li>
+<li><p>C언어에서는…</p>
+<ul>
+<li>문자를 표현 : char <ul>
+<li>scanf(“%s”, char, sizeof(char)); // sizeof 는 ___개의 문자만 받겠다고 해서 사용한다 </li>
+</ul>
+</li>
+<li>숫자 표현 : int, float, double <ul>
+<li>%d, %f, %lf</li>
+</ul>
+</li>
+<li>자료형 없음 : void</li>
+<li>문자열 저장하는 String자료형이 없고, char 만 사용</li>
+<li>상수를 사용하는 방법은 변수앞에 const 를 붙여준다 </li>
+</ul>
+</li>
+<li><p>파생 자료형(Derived)</p>
+<ul>
+<li>Array</li>
+<li>Pointer</li>
+<li>Functions</li>
+</ul>
+</li>
+<li><p>사용자 정의 자료형(User defined) </p>
+<ul>
+<li>enum</li>
+<li>Structure</li>
+<li>Union</li>
+</ul>
+</li>
+</ul>
+<h3 id="char-자료형"><a href="#char-자료형" class="headerlink" title="char 자료형"></a>char 자료형</h3><pre><code>    #include &lt;stdio.h&gt;
+
+    int main(void) &#123;
+
+        int x = 65;
+        printf(&quot;%c\n&quot;, x);
+
+        char y = &#39;A&#39;; // 65 이라고 해도 A가 출력된다. 아스키 코드라고 한다. 
+        printf(&quot;%c\n&quot;, y);
+
+        char z = &#39;B&#39;;
+        printf(&quot;%c\n&quot;, z);
+        printf(&quot;%d&quot;, z); // 66이 나온다 
+        return 0;
+    &#125;</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jeonghoonan.github.io/2020/09/22/09_22/" data-id="ckfdhxw2x000k00u97eykaubo" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-09_20" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/09/20/09_20/" class="article-date">
@@ -92,7 +183,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/20/09_20/" data-id="ckfafk5y4000id0u91bpp4ylu" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/20/09_20/" data-id="ckfdhxw2t000i00u93v0b085h" class="article-share-link">Share</a>
       
       
     </footer>
@@ -206,7 +297,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/18/09_18/" data-id="ckfafk5y3000hd0u978bjb91g" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/18/09_18/" data-id="ckfdhxw2s000h00u94cwz518k" class="article-share-link">Share</a>
       
       
     </footer>
@@ -277,7 +368,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/16/09_16/" data-id="ckfafk5y2000gd0u9eg979vcr" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/16/09_16/" data-id="ckfdhxw2q000g00u9d3xhf0mt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -330,7 +421,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/14/09_14/" data-id="ckfafk5xx000dd0u96qi41d6d" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/14/09_14/" data-id="ckfdhxw2o000f00u9eya8gd4u" class="article-share-link">Share</a>
       
       
     </footer>
@@ -453,7 +544,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/13/09_13/" data-id="ckfafk5y0000fd0u91odxdrv0" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/13/09_13/" data-id="ckfdhxw2m000e00u9gyzcca9r" class="article-share-link">Share</a>
       
       
     </footer>
@@ -515,7 +606,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/10/09_10/" data-id="ckfafk5xv000cd0u99ik3bgam" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/10/09_10/" data-id="ckfdhxw2i000d00u99yyne0fc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -590,7 +681,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/08/09_08/" data-id="ckfafk5xz000ed0u93aefd9mb" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/08/09_08/" data-id="ckfdhxw29000a00u9g6ync0cd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -663,7 +754,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/06/09_06/" data-id="ckfafk5xr000ad0u9h7pc6g1e" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/06/09_06/" data-id="ckfdhxw2g000c00u9f5z0ayhh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -726,108 +817,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/05/09_05/" data-id="ckfafk5xt000bd0u99c3oczig" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-09_04" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/04/09_04/" class="article-date">
-  <time datetime="2020-09-04T01:05:53.987Z" itemprop="datePublished">2020-09-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/04/09_04/">Study090420</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="객체지향-프로그래밍-V"><a href="#객체지향-프로그래밍-V" class="headerlink" title="객체지향 프로그래밍(V)"></a>객체지향 프로그래밍(V)</h1><h2 id="다형성-Polymorphism"><a href="#다형성-Polymorphism" class="headerlink" title="다형성 (Polymorphism)"></a><u>다형성 (Polymorphism)</u></h2><h3 id="특징"><a href="#특징" class="headerlink" title="특징"></a>특징</h3><ul>
-<li><p>부모 클래스 타입으로 자식 클래스 객체를 참조하는 특징 </p>
-<pre><code>  public class Foo &#123;
-      public void methodA() &#123;
-          return;
-      &#125;
-  &#125;
-
-  public class Bar extends Foo &#123;
-      public void methodB() &#123;
-          return;
-      &#125;
-  &#125;
-
-  public class Main &#123;
-      public static void main(String args[]) &#123;
-          Bar bar = new Bar(); // 자식 객체를 생성
-
-          Foo foo = (Foo)bar; // 부모 클래스 타입으로 자식 객체를 받음 
-      &#125;
-  &#125;</code></pre>
-</li>
-<li><p>부모 클래스로 자식 클래스를 참조한 경우, 자식 클래스의 메소드는 사용할수없다</p>
-<pre><code>  public class Main &#123;
-      public static void main(String args[]) &#123;
-          Bar bar = new Bar();
-          Foo foo = (Foo)bar;
-
-          foo.methodA(); // works
-          // foo.methodB(); // error
-      &#125;
-  &#125;</code></pre>
-</li>
-<li><p>멤버 변수의 재정의는 선언된 객체의 타입을 따른다(문법적으로 본다)</p>
-</li>
-<li><p>메소드 오버라이딩은 메모리상의 객체 타입을 따른다(실체 객체로 본다)</p>
-<ul>
-<li>(가상 메소드 호출: Virtual method call)</li>
-</ul>
-</li>
-<li><p>공변 반환 타입(Covariant return type)              </p>
-<pre><code>  class Foo &#123;
-      public Foo getInstance() &#123;
-          return this;
-      &#125;
-  &#125;
-
-  class Bar extends Foo &#123; // 같이 변화는 공변 변홥 타입
-      public Bar getInstance() &#123; // Foo 대신 Bar로 리턴 가능
-          return this;
-      &#125;
-  &#125;</code></pre>
-</li>
-</ul>
-<h4 id="Polymorphism"><a href="#Polymorphism" class="headerlink" title="Polymorphism"></a>Polymorphism</h4><ul>
-<li>It occurs when we have many classes that are related to each other by inheritance.</li>
-<li>Uses methods from inheritance to perform different tasks<ul>
-<li>Allows us to perform a single action in different ways        </li>
-</ul>
-</li>
-<li>Why and When to use “Inheritance” and “Polymorphism?”    <ul>
-<li>It is useful for code reusability: reuse attributes and methods of an existing class when create a new class        </li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/04/09_04/" data-id="ckfafk5xp0009d0u93hh4b1cq" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/05/09_05/" data-id="ckfdhxw27000900u9egnhfngb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -873,6 +863,10 @@
       <ul>
         
           <li>
+            <a href="/2020/09/22/09_22/">Study092220</a>
+          </li>
+        
+          <li>
             <a href="/2020/09/20/09_20/">New Start</a>
           </li>
         
@@ -886,10 +880,6 @@
         
           <li>
             <a href="/2020/09/14/09_14/">Study091420</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/13/09_13/">Study091320</a>
           </li>
         
       </ul>

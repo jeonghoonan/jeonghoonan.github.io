@@ -5,19 +5,21 @@
   
 
   
-  <title>Study091020 | 나의 좌충우돌 개발 기행</title>
+  <title>Study092220 | 나의 좌충우돌 개발 기행</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="OOP Advanced(III)열거형 (Enumeration)특징 enum 키워드로 표현  내부적인 구현은 enum -&gt; java.lang.Enum 클래스를 상속 다른 클래스를 상속하지 못한다 인터페이스 구현은 가능하다(상속과 별개로 가능) 타입에는 열거형 상수와 null 값을 할당 가능하다   구현 일반적인 열거형의 구현 클래스 내부에서 열거형 구현">
+  <meta name="description" content="자료형(Data Types)출처 구조 원시 자료형(Primitive)  문자형 (char) 정수형 (short, int, long) 실수형 (float, double) void   C언어에서는…  문자를 표현 : char  scanf(“%s”, char, sizeof(char)); &#x2F;&#x2F; sizeof 는 ___개의 문자만 받겠다고 해서 사용한다    숫자 표">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Study091020">
-<meta property="og:url" content="https://jeonghoonan.github.io/2020/09/10/09_10/index.html">
+<meta property="og:title" content="Study092220">
+<meta property="og:url" content="https://jeonghoonan.github.io/2020/09/22/09_22/index.html">
 <meta property="og:site_name" content="나의 좌충우돌 개발 기행">
-<meta property="og:description" content="OOP Advanced(III)열거형 (Enumeration)특징 enum 키워드로 표현  내부적인 구현은 enum -&gt; java.lang.Enum 클래스를 상속 다른 클래스를 상속하지 못한다 인터페이스 구현은 가능하다(상속과 별개로 가능) 타입에는 열거형 상수와 null 값을 할당 가능하다   구현 일반적인 열거형의 구현 클래스 내부에서 열거형 구현">
+<meta property="og:description" content="자료형(Data Types)출처 구조 원시 자료형(Primitive)  문자형 (char) 정수형 (short, int, long) 실수형 (float, double) void   C언어에서는…  문자를 표현 : char  scanf(“%s”, char, sizeof(char)); &#x2F;&#x2F; sizeof 는 ___개의 문자만 받겠다고 해서 사용한다    숫자 표">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-10T01:51:39.343Z">
-<meta property="article:modified_time" content="2020-09-10T01:58:33.181Z">
+<meta property="og:image" content="https://jeonghoonan.github.io/2020/09/22/09_22/DataType1.PNG">
+<meta property="article:published_time" content="2020-09-22T05:02:04.043Z">
+<meta property="article:modified_time" content="2020-09-22T05:04:34.266Z">
 <meta property="article:author" content="JeongHoon">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jeonghoonan.github.io/2020/09/22/09_22/DataType1.PNG">
   
     <link rel="alternate" href="/atom.xml" title="나의 좌충우돌 개발 기행" type="application/atom+xml">
   
@@ -66,10 +68,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-09_10" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-09_22" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/09/10/09_10/" class="article-date">
-  <time datetime="2020-09-10T01:51:39.343Z" itemprop="datePublished">2020-09-10</time>
+    <a href="/2020/09/22/09_22/" class="article-date">
+  <time datetime="2020-09-22T05:02:04.043Z" itemprop="datePublished">2020-09-22</time>
 </a>
     
   </div>
@@ -80,7 +82,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Study091020
+      Study092220
     </h1>
   
 
@@ -88,37 +90,66 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="OOP-Advanced-III"><a href="#OOP-Advanced-III" class="headerlink" title="OOP Advanced(III)"></a>OOP Advanced(III)</h1><h2 id="열거형-Enumeration"><a href="#열거형-Enumeration" class="headerlink" title="열거형 (Enumeration)"></a>열거형 (Enumeration)</h2><h3 id="특징"><a href="#특징" class="headerlink" title="특징"></a>특징</h3><ul>
-<li>enum 키워드로 표현 </li>
-<li>내부적인 구현은 enum -&gt; java.lang.Enum 클래스를 상속</li>
-<li>다른 클래스를 상속하지 못한다</li>
-<li>인터페이스 구현은 가능하다(상속과 별개로 가능)</li>
-<li>타입에는 열거형 상수와 null 값을 할당 가능하다 </li>
+        <h1 id="자료형-Data-Types"><a href="#자료형-Data-Types" class="headerlink" title="자료형(Data Types)"></a>자료형(Data Types)</h1><p><img src="DataType1.PNG" alt="img"><br><a target="_blank" rel="noopener" href="https://m.blog.naver.com/sharonichoya/220339079484">출처</a></p>
+<h2 id="구조"><a href="#구조" class="headerlink" title="구조"></a>구조</h2><ul>
+<li><p>원시 자료형(Primitive)</p>
+<ul>
+<li>문자형 (char)</li>
+<li>정수형 (short, int, long)</li>
+<li>실수형 (float, double)</li>
+<li>void</li>
 </ul>
-<h3 id="구현"><a href="#구현" class="headerlink" title="구현"></a>구현</h3><ul>
-<li>일반적인 열거형의 구현</li>
-<li>클래스 내부에서 열거형 구현 </li>
-<li>열거형에 메소드 구현 </li>
-<li>열거형 생성자를 이용한 enum 상수 초기화<ul>
-<li>열거형의 생성자는 항상 private 이며 생략 가능 </li>
+</li>
+<li><p>C언어에서는…</p>
+<ul>
+<li>문자를 표현 : char <ul>
+<li>scanf(“%s”, char, sizeof(char)); // sizeof 는 ___개의 문자만 받겠다고 해서 사용한다 </li>
+</ul>
+</li>
+<li>숫자 표현 : int, float, double <ul>
+<li>%d, %f, %lf</li>
+</ul>
+</li>
+<li>자료형 없음 : void</li>
+<li>문자열 저장하는 String자료형이 없고, char 만 사용</li>
+<li>상수를 사용하는 방법은 변수앞에 const 를 붙여준다 </li>
+</ul>
+</li>
+<li><p>파생 자료형(Derived)</p>
+<ul>
+<li>Array</li>
+<li>Pointer</li>
+<li>Functions</li>
+</ul>
+</li>
+<li><p>사용자 정의 자료형(User defined) </p>
+<ul>
+<li>enum</li>
+<li>Structure</li>
+<li>Union</li>
 </ul>
 </li>
 </ul>
-<h1 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h1><h2 id="추상크래스-Abstract-class"><a href="#추상크래스-Abstract-class" class="headerlink" title="추상크래스 (Abstract class)"></a>추상크래스 (Abstract class)</h2><ul>
-<li>메소드가 구현되지 않고 선언만된 클래스 <ul>
-<li>자식 클래스에서 반드시 구현해야 메소드를 abstract 으로 선언 </li>
-</ul>
-</li>
-<li>추상클래스 선언<ul>
-<li>abstract 키워드를 사용하고, 클래스 / 메소드 를 선언한다     </li>
-</ul>
-</li>
-</ul>
+<h3 id="char-자료형"><a href="#char-자료형" class="headerlink" title="char 자료형"></a>char 자료형</h3><pre><code>    #include &lt;stdio.h&gt;
+
+    int main(void) &#123;
+
+        int x = 65;
+        printf(&quot;%c\n&quot;, x);
+
+        char y = &#39;A&#39;; // 65 이라고 해도 A가 출력된다. 아스키 코드라고 한다. 
+        printf(&quot;%c\n&quot;, y);
+
+        char z = &#39;B&#39;;
+        printf(&quot;%c\n&quot;, z);
+        printf(&quot;%d&quot;, z); // 66이 나온다 
+        return 0;
+    &#125;</code></pre>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/09/10/09_10/" data-id="ckfdhxw2i000d00u99yyne0fc" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/09/22/09_22/" data-id="ckfdhxw2x000k00u97eykaubo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -127,19 +158,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/09/13/09_13/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Study091320
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/09/08/09_08/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/09/20/09_20/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Study090820</div>
+      <div class="article-nav-title">New Start</div>
     </a>
   
 </nav>
