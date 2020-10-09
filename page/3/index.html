@@ -64,9 +64,185 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-08_27" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-post/08_28" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/08/27/08_27/" class="article-date">
+    <a href="/2020/08/28/post/08_28/" class="article-date">
+  <time datetime="2020-08-28T01:20:03.849Z" itemprop="datePublished">2020-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/28/post/08_28/">Study082820</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="자바문법-기초-I"><a href="#자바문법-기초-I" class="headerlink" title="자바문법 기초(I)"></a>자바문법 기초(I)</h1><h2 id="변수"><a href="#변수" class="headerlink" title="변수"></a>변수</h2><ul>
+<li>변하는 수 </li>
+<li>변하는 값이 할당 될수있는 메모리의 공간 <ul>
+<li>변수는 스택 영역에 생성된다</li>
+<li>객체는 힙 영역에 생선된다 </li>
+</ul>
+</li>
+</ul>
+<h3 id="변수명의-권장-사항"><a href="#변수명의-권장-사항" class="headerlink" title="변수명의 권장 사항"></a>변수명의 권장 사항</h3><ul>
+<li>변수명: 의미있는 내용을 사용하여 변수의 용도를 알수있게 한다</li>
+<li>클래스, 인터페이스, Enum, 애너테이션 : PascalCase</li>
+<li>변수, 메소드 : camelCase</li>
+<li>상수 : CONSTANT_NUMBER</li>
+</ul>
+<h2 id="자료형-Data-Type"><a href="#자료형-Data-Type" class="headerlink" title="자료형 (Data Type)"></a>자료형 (Data Type)</h2><h3 id="기본형-Primitive-Type"><a href="#기본형-Primitive-Type" class="headerlink" title="기본형 (Primitive Type)"></a>기본형 (Primitive Type)</h3><ul>
+<li>Byte(1byte=8bits) 범위: -2^7 ~ 2^7 - 1</li>
+<li>Short(2byte) 범위: -2^15 ~ 2^15 - 1</li>
+<li>Int(4byte) 범위: -2^31 ~ 2^31 - 1</li>
+<li>Long(8byte) 범위: -2^63 ~ 2^63 - 1<h3 id="진수법"><a href="#진수법" class="headerlink" title="진수법"></a>진수법</h3><ul>
+<li>2진수(binary)</li>
+<li>8진수(octal)</li>
+<li>10진수(decimal)</li>
+<li>16진수(hexadecimal)</li>
+</ul>
+</li>
+</ul>
+<h3 id="문자형-Char"><a href="#문자형-Char" class="headerlink" title="문자형(Char)"></a>문자형(Char)</h3><ul>
+<li>문자는 기본적으로 ASCII 코드로 저장이된다. </li>
+<li>문자를 표현할때는 ‘ ‘ 작은 따옴표로 표현한다. </li>
+<li>새로운 라인을 넣을때는 \n 을 사용한다. </li>
+<li>유니코드는 \u + 16진수로 표현을 한다.</li>
+</ul>
+<h3 id="논리형-Boolean"><a href="#논리형-Boolean" class="headerlink" title="논리형(Boolean)"></a>논리형(Boolean)</h3><ul>
+<li>true</li>
+<li>false</li>
+<li>isTrue = 1 (이렇게는 사용할수없다.)</li>
+</ul>
+<h3 id="문자열-String"><a href="#문자열-String" class="headerlink" title="문자열(String)"></a>문자열(String)</h3><ul>
+<li>참조형 자료이다.</li>
+<li>문자형과는 다르게 “ “ 를 사용해서 표현한다.</li>
+</ul>
+<h3 id="형변환-Type-Casting"><a href="#형변환-Type-Casting" class="headerlink" title="형변환(Type Casting)"></a>형변환(Type Casting)</h3><ul>
+<li>Casting 을 하지않으면 처리하지않고 소실하게된다.</li>
+<li>업캐스팅(Upcasting)<ul>
+<li>범위가 작은쪽에서 큰쪽으로 간다 / 정밀도가 낮은곳에서 높은곳으로 간다. </li>
+<li>Implicit / Explicit 방법을 사용할수있다.        </li>
+<li>long변수에서 float으로 자동으로 변환한다.</li>
+</ul>
+</li>
+<li>다운캐스팅(Downcasting)<ul>
+<li>다운캐스팅은 자동으로 이루어지지않는다(명시적방법으로만 가능하다)</li>
+</ul>
+</li>
+</ul>
+<h2 id="자료의-입출력-Inputs-amp-Outputs"><a href="#자료의-입출력-Inputs-amp-Outputs" class="headerlink" title="자료의 입출력 (Inputs &amp; Outputs)"></a>자료의 입출력 (Inputs &amp; Outputs)</h2><h3 id="출력메소드"><a href="#출력메소드" class="headerlink" title="출력메소드"></a>출력메소드</h3><ul>
+<li>포맷 문자열을 사용하여 문자열/기본형 출력<ul>
+<li>print() : public void print(Object obj)</li>
+<li>println() : public void println(Object x)</li>
+<li>printf() : public PrintStream printf(String format, Object … args)<ul>
+<li>%b: boolean</li>
+<li>%d: decimal integer</li>
+<li>%o: octal</li>
+<li>%x, %X: hexadecimal</li>
+<li>%f: decial float</li>
+<li>%e: exponet</li>
+<li>%c: character</li>
+<li>%s: string</li>
+<li>%n: newline</li>
+</ul>
+</li>
+<li>지시사 자릿수 표현 <ul>
+<li>%nd: n칸을 사용하고 숫자를 오른쪽 정렬</li>
+<li>%-nd: n칸을 사용하고 숫자를 왼쪽으로 정렬</li>
+<li>%0nd: n칸을 사용하고 빈칸을 0으로 채움</li>
+<li>%n.mf: n칸을 사용하고 소수점 이하 m자리까지 표현 </li>
+</ul>
+</li>
+<li>입력 메소드<ul>
+<li>Scanner 값을 이용 <ul>
+<li>import java.util.Scanner;</li>
+<li>Scanner scanner = new Scanner(System.in);</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="연산자-Operators"><a href="#연산자-Operators" class="headerlink" title="연산자 (Operators)"></a>연산자 (Operators)</h2><ul>
+<li>연산의 구성<ul>
+<li>연산자(Operator)<ul>
+<li>산술 연산자 : + - * / %<ul>
+<li>조심해야할것 : 정수형(Overflow) 실수형(정확도) Infinity, NAN</li>
+</ul>
+</li>
+<li>대입 연산자 : = += -= *= /= %=</li>
+<li>비교 연산자 : &lt; &gt; &lt;= &gt;= == !=<ul>
+<li>출력은 true 또는 false</li>
+</ul>
+</li>
+<li>논리 연산자 : <ul>
+<li>&amp; - AND</li>
+<li>| - OR</li>
+<li>! - NOT</li>
+<li>^ - XOR</li>
+<li>&amp;&amp; - AND</li>
+<li>|| - OR</li>
+</ul>
+</li>
+<li>증감 연산자 : <ul>
+<li>++Value : 피연산자의 값을 1 증가 한후 연산식 평가</li>
+<li>Value++ : 연산식을 평가한후에 피연산자의 값을 1 증가</li>
+<li>–Value : 피연산자의 값을 1 감소 한후 연산식 평가</li>
+<li>Value– : 연산식을 평가한후에 피연산자의 값을 1 감소</li>
+</ul>
+</li>
+<li>삼항 연산자(?:) : 첫 피연산자의 값이 true면 두번째 연산자, false이면 세번째 연산자 출력. </li>
+<li>비트 연산자 : 정수형을 피연산자를 대상으로한다. <ul>
+<li>논리비트 연산자 : <ul>
+<li>&amp; : Bitwise AND</li>
+<li>| : Bitwise OR</li>
+<li>~ : Bitwise INV</li>
+<li>^ : Bitwise XOR</li>
+</ul>
+</li>
+<li>이동비트 연산자 : <ul>
+<li>&lt;&lt; : 좌측 피연산자의 각 비트를 왼쪽으로 우측 피연산자만큼 이동한다. 빈자리는 0으로 채운다.</li>
+<li>&gt;&gt; : 좌측 피연산자의 각 비트를 오른쪽으로 우측 피연산자만큼 이동한다. 빈자리는 Sign Bit로 채운다. </li>
+<li>&gt;&gt;&gt; : 좌측 비연사자의 각 비트를 오른쪽으로 우측 피연자만큼 이동한다. 빈자리는 0으로 채운다. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>피연산자(Operand)</li>
+<li>연산식(Expression)</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jeonghoonan.github.io/2020/08/28/post/08_28/" data-id="ckg26n1pz00020ou95or35958" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-post/08_27" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/27/post/08_27/" class="article-date">
   <time datetime="2020-08-27T01:42:06.975Z" itemprop="datePublished">2020-08-27</time>
 </a>
     
@@ -78,7 +254,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/27/08_27/">Study082720</a>
+      <a class="article-title" href="/2020/08/27/post/08_27/">Study082720</a>
     </h1>
   
 
@@ -212,7 +388,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/27/08_27/" data-id="ckfwmizte0001i0u973pdgdfw" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/27/post/08_27/" data-id="ckg26n1pw00010ou91sl1hrq1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -222,9 +398,9 @@
 
 
   
-    <article id="post-08_26" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-post/08_26" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/08/26/08_26/" class="article-date">
+    <a href="/2020/08/26/post/08_26/" class="article-date">
   <time datetime="2020-08-26T01:43:35.974Z" itemprop="datePublished">2020-08-26</time>
 </a>
     
@@ -236,7 +412,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/26/08_26/">Study082620</a>
+      <a class="article-title" href="/2020/08/26/post/08_26/">Study082620</a>
     </h1>
   
 
@@ -302,7 +478,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/26/08_26/" data-id="ckfwmizt30000i0u950pk44ei" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/26/post/08_26/" data-id="ckg26n1pq00000ou966o9hhnf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -312,9 +488,9 @@
 
 
   
-    <article id="post-java" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-post/java" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/08/10/java/" class="article-date">
+    <a href="/2020/08/10/post/java/" class="article-date">
   <time datetime="2020-08-10T02:43:12.540Z" itemprop="datePublished">2020-08-10</time>
 </a>
     
@@ -326,7 +502,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/10/java/">My Blog</a>
+      <a class="article-title" href="/2020/08/10/post/java/">My Blog</a>
     </h1>
   
 
@@ -339,7 +515,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/10/java/" data-id="ckfwmizul000mi0u979hn5c8t" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/10/post/java/" data-id="ckg26n1qt000p0ou91za80yh9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -349,9 +525,9 @@
 
 
   
-    <article id="post-My-new-hexo-post" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-post/My-new-hexo-post" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/08/07/My-new-hexo-post/" class="article-date">
+    <a href="/2020/08/07/post/My-new-hexo-post/" class="article-date">
   <time datetime="2020-08-07T07:21:34.000Z" itemprop="datePublished">2020-08-07</time>
 </a>
     
@@ -363,7 +539,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/07/My-new-hexo-post/">My new hexo post</a>
+      <a class="article-title" href="/2020/08/07/post/My-new-hexo-post/">My new hexo post</a>
     </h1>
   
 
@@ -379,7 +555,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/07/My-new-hexo-post/" data-id="ckfwmizun000ni0u90oxr0mdl" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/07/post/My-new-hexo-post/" data-id="ckg26n1ql000m0ou9dz0fe388" class="article-share-link">Share</a>
       
       
     </footer>
@@ -389,9 +565,9 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-post/hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/08/07/hello-world/" class="article-date">
+    <a href="/2020/08/07/post/hello-world/" class="article-date">
   <time datetime="2020-08-07T07:11:05.372Z" itemprop="datePublished">2020-08-07</time>
 </a>
     
@@ -403,7 +579,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/07/hello-world/">Hello World</a>
+      <a class="article-title" href="/2020/08/07/post/hello-world/">Hello World</a>
     </h1>
   
 
@@ -428,7 +604,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://jeonghoonan.github.io/2020/08/07/hello-world/" data-id="ckfwmizup000oi0u98azc9hde" class="article-share-link">Share</a>
+      <a data-url="https://jeonghoonan.github.io/2020/08/07/post/hello-world/" data-id="ckg26n1qm000n0ou99o1m7itn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -461,7 +637,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
     </div>
   </div>
 
@@ -474,23 +650,23 @@
       <ul>
         
           <li>
-            <a href="/2020/09/25/09_25/">Study092520</a>
+            <a href="/2020/10/05/post/post/">post</a>
           </li>
         
           <li>
-            <a href="/2020/09/24/09_24/">Study092420</a>
+            <a href="/2020/09/25/post/09_25/">Study092520</a>
           </li>
         
           <li>
-            <a href="/2020/09/22/09_22/">Study092220</a>
+            <a href="/2020/09/24/post/09_24/">Study092420</a>
           </li>
         
           <li>
-            <a href="/2020/09/20/09_20/">New Start</a>
+            <a href="/2020/09/22/post/09_22/">Study092220</a>
           </li>
         
           <li>
-            <a href="/2020/09/18/09_18/">Study091820</a>
+            <a href="/2020/09/20/post/09_20/">New Start</a>
           </li>
         
       </ul>

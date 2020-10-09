@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Study083020 | 나의 좌충우돌 개발 기행</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="자바문법 기초(III)배열 (Arrays)배열의 특성 하나의 변수로 여러개의 값을 다룰 수 있다. 동일 자료 형만 다룰 수 있다. 한번 생성한 배열의 크기는 변하지 않는다 배열에 속한 값은 메모리에 연속으로 위치한다.  배열의 선언 int[] intArray; &#x2F;&#x2F; 자료형[] 변수명;  int integerArray[]; &#x2F;&#x2F; 자료형 변수명[];  배열의">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Study083020">
+<meta property="og:url" content="https://jeonghoonan.github.io/2020/08/30/post/08_30/index.html">
+<meta property="og:site_name" content="나의 좌충우돌 개발 기행">
+<meta property="og:description" content="자바문법 기초(III)배열 (Arrays)배열의 특성 하나의 변수로 여러개의 값을 다룰 수 있다. 동일 자료 형만 다룰 수 있다. 한번 생성한 배열의 크기는 변하지 않는다 배열에 속한 값은 메모리에 연속으로 위치한다.  배열의 선언 int[] intArray; &#x2F;&#x2F; 자료형[] 변수명;  int integerArray[]; &#x2F;&#x2F; 자료형 변수명[];  배열의">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-30T04:08:37.460Z">
+<meta property="article:modified_time" content="2020-08-30T04:24:44.374Z">
+<meta property="article:author" content="JeongHoon">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="나의 좌충우돌 개발 기행" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">나의 좌충우돌 개발 기행</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://jeonghoonan.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-post/08_30" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/30/post/08_30/" class="article-date">
+  <time datetime="2020-08-30T04:08:37.460Z" itemprop="datePublished">2020-08-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Study083020
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="자바문법-기초-III"><a href="#자바문법-기초-III" class="headerlink" title="자바문법 기초(III)"></a>자바문법 기초(III)</h1><h2 id="배열-Arrays"><a href="#배열-Arrays" class="headerlink" title="배열 (Arrays)"></a><u>배열 (Arrays)</u></h2><h3 id="배열의-특성"><a href="#배열의-특성" class="headerlink" title="배열의 특성"></a>배열의 특성</h3><ul>
+<li>하나의 변수로 여러개의 값을 다룰 수 있다.</li>
+<li>동일 자료 형만 다룰 수 있다.</li>
+<li>한번 생성한 배열의 크기는 변하지 않는다</li>
+<li>배열에 속한 값은 메모리에 연속으로 위치한다.</li>
+</ul>
+<h3 id="배열의-선언"><a href="#배열의-선언" class="headerlink" title="배열의 선언"></a>배열의 선언</h3><ul>
+<li>int[] intArray; // 자료형[] 변수명; </li>
+<li>int integerArray[]; // 자료형 변수명[];</li>
+</ul>
+<h3 id="배열의-생성"><a href="#배열의-생성" class="headerlink" title="배열의 생성"></a>배열의 생성</h3><ul>
+<li>int[] intArray = new int[10]; <br>intArray[0] = 4; <br>intArray[1] = 10;</li>
+</ul>
+<h3 id="배열과-반복문"><a href="#배열과-반복문" class="headerlink" title="배열과 반복문"></a>배열과 반복문</h3><ul>
+<li><p>인덱스를 이용한 배열</p>
+<pre><code>  float[] floatArray = new float[10];
+  for (int i = 0; i &lt; floatArray.length; i++) &#123;
+  floatArray[i] = i * 0.5;
+  &#125;</code></pre>
+</li>
+<li><p>for 문 이용한 배열</p>
+<pre><code>  int[] intArray = &#123;4, 5, 1, 2, 7, 5&#125;;
+  for (int value: intArray) &#123;
+  System.out.println(value);
+  &#125;</code></pre>
+</li>
+</ul>
+<h3 id="배열-크기-변경"><a href="#배열-크기-변경" class="headerlink" title="배열 크기 변경"></a>배열 크기 변경</h3><ul>
+<li><p>배열의 크기는 변경할수 없으므로 새로운 배열을 만들고 데이터를 옮겨야한다.</p>
+<pre><code>  int[] src = &#123;1, 2, 3, 4, 5&#125;;
+  int[] dst = new int[10];
+  for(int i = 0; i &lt; source.length; i++) &#123;
+  dst[i] = src[i];
+  &#125;
+
+  int[] src = &#123;1, 2, 3, 4, 5&#125;;
+  int[] dst = new int[10];
+  System.arraycopy(src, 0, dst, 0, src.length);</code></pre>
+</li>
+</ul>
+<h2 id="다차원-배열-N-D-Arrays"><a href="#다차원-배열-N-D-Arrays" class="headerlink" title="다차원 배열 (N-D Arrays)"></a><u>다차원 배열 (N-D Arrays)</u></h2><ul>
+<li><p>배열을 담고 있는 배열 </p>
+</li>
+<li><p>선언</p>
+<pre><code>  int[] array2D[];
+  int[][] array2D;
+  int array2D[][];</code></pre>
+</li>
+<li><p>생성 : 여러 차원의 배열을 동시에 생성</p>
+<pre><code>  int[][] array2D = new int[5][10];</code></pre>
+</li>
+<li><p>초기화</p>
+<pre><code>  int[][] array2D = &#123;&#123;3, 5, 1, 20, 65&#125;,
+                           &#123;5, 2, 6&#125;, // length may vary
+                           &#123;10, 3, 5, 67, 3&#125;&#125;;</code></pre>
+</li>
+<li><p>배열과 반복문</p>
+<ul>
+<li><p>인덱스를 이용한 배열</p>
+<pre><code>  int[][] array2D = new int[10][10];
+  for (int i = 0; i &lt; array2D.length; i++) &#123;
+    for (int j = 0; j &lt; array2D[i].length; j++) &#123;
+      array2D[i][j] = i * j;
+    &#125;
+  &#125;</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jeonghoonan.github.io/2020/08/30/post/08_30/" data-id="ckg26n1q200040ou94u06h5jh" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/08/31/post/08_31/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Study083120
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/08/29/post/08_29/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Study082920</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/05/post/post/">post</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/25/post/09_25/">Study092520</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/24/post/09_24/">Study092420</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/22/post/09_22/">Study092220</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/20/post/09_20/">New Start</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 JeongHoon<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

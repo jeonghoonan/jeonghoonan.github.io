@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Study082920 | 나의 좌충우돌 개발 기행</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="자바문법 기초(II)조건문 (Conditional Statements) 조건에 따라서 코드의 실행 흐름을 결정   if 계열 조건문    if(조건식)    &#x2F;&#x2F; 실행문    if(조건식) &amp;#123;   &#x2F;&#x2F; 실행문   &amp;#125;  if ~ else 문   if(조건식) &amp;#123;     &#x2F;&#x2F; 조건식이 true일때 실행할 실행문   &amp;#125; els">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Study082920">
+<meta property="og:url" content="https://jeonghoonan.github.io/2020/08/29/post/08_29/index.html">
+<meta property="og:site_name" content="나의 좌충우돌 개발 기행">
+<meta property="og:description" content="자바문법 기초(II)조건문 (Conditional Statements) 조건에 따라서 코드의 실행 흐름을 결정   if 계열 조건문    if(조건식)    &#x2F;&#x2F; 실행문    if(조건식) &amp;#123;   &#x2F;&#x2F; 실행문   &amp;#125;  if ~ else 문   if(조건식) &amp;#123;     &#x2F;&#x2F; 조건식이 true일때 실행할 실행문   &amp;#125; els">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-29T05:34:22.731Z">
+<meta property="article:modified_time" content="2020-08-29T05:42:39.857Z">
+<meta property="article:author" content="JeongHoon">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="나의 좌충우돌 개발 기행" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">나의 좌충우돌 개발 기행</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://jeonghoonan.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-post/08_29" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/29/post/08_29/" class="article-date">
+  <time datetime="2020-08-29T05:34:22.731Z" itemprop="datePublished">2020-08-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Study082920
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="자바문법-기초-II"><a href="#자바문법-기초-II" class="headerlink" title="자바문법 기초(II)"></a>자바문법 기초(II)</h1><h2 id="조건문-Conditional-Statements"><a href="#조건문-Conditional-Statements" class="headerlink" title="조건문 (Conditional Statements)"></a>조건문 (Conditional Statements)</h2><ul>
+<li><p>조건에 따라서 코드의 실행 흐름을 결정 </p>
+</li>
+<li><p>if 계열 조건문 </p>
+<pre><code>  if(조건식)
+   // 실행문
+
+  if(조건식) &#123;
+  // 실행문
+  &#125;</code></pre>
+</li>
+<li><p>if ~ else 문</p>
+<pre><code>  if(조건식) &#123;
+    // 조건식이 true일때 실행할 실행문
+  &#125; else &#123;
+    // 조건식이 false일때 실행할 실행문
+  &#125;</code></pre>
+</li>
+<li><p>Nested if 문</p>
+<pre><code>  if(조건식1) &#123;
+    if(조건식2) &#123;
+      // 조건식1과 조건식2가 true일때 실행할 실행문
+    &#125; else &#123;
+      if(조건식3) &#123;
+        // 조건식1과 조건식3이 true이고 조건식2가 false일때 실행할 실행문
+      &#125;
+    &#125;
+  &#125;</code></pre>
+</li>
+<li><p>switch ~ case 문</p>
+<pre><code>  switch(조건식) &#123;
+    case 비교값1:
+      // 실행문1
+      break;
+    case 비교값2:
+      // 실행문2
+      break;
+    default:
+      // 실행문3
+  &#125;</code></pre>
+</li>
+<li><p>Fall-through</p>
+<ul>
+<li><p>break 문을 사용하지 않고 다음 case문을 실행 시키는 방법</p>
+<pre><code>  switch(조건식) &#123;
+  case 비교값1:
+      // 실행문1
+  case 비교값2:
+      // 실행문2
+      default:
+      // 실행문3
+  &#125;
+  // 비교값1에 해당할 경우: 실행문1, 실행문2, 실행문3 실행
+  // 비교값2에 해당할 경우: 실행문2, 실행문3 실행
+  // 해당하는 값이 없을 경우: 실행문3 실행    </code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="반복문-Loops"><a href="#반복문-Loops" class="headerlink" title="반복문 (Loops)"></a>반복문 (Loops)</h2><h3 id="반복문-구성"><a href="#반복문-구성" class="headerlink" title="반복문 구성"></a>반복문 구성</h3><ul>
+<li>초기화</li>
+<li>조건식</li>
+<li>실행문</li>
+<li>증감식 </li>
+</ul>
+<h4 id="for-문"><a href="#for-문" class="headerlink" title="for 문"></a>for 문</h4><pre><code>    for(초기화; 조건식; 증감식) &#123;
+      // 실행문
+    &#125;</code></pre>
+<h4 id="while-문"><a href="#while-문" class="headerlink" title="while 문"></a>while 문</h4><ul>
+<li><p>실행문이 한번도 실행이 안될수도 있다 </p>
+<pre><code>  // 초기화
+  while(조건식) &#123;
+     // 실행문
+     // 증감식
+  &#125;</code></pre>
+<h4 id="do-while-문"><a href="#do-while-문" class="headerlink" title="do ~ while 문"></a>do ~ while 문</h4></li>
+<li><p>무조건 한번은 실행이 된다</p>
+<pre><code>  //초기화
+  do &#123;
+    //실행문
+    //증감식
+  &#125; while(조건식)</code></pre>
+</li>
+</ul>
+<h3 id="반복문-제어"><a href="#반복문-제어" class="headerlink" title="반복문 제어"></a>반복문 제어</h3><h4 id="break-문"><a href="#break-문" class="headerlink" title="break 문"></a>break 문</h4><ul>
+<li><p>반복문을 바로 종료한다.</p>
+<pre><code>  while (조건식) &#123;
+    if (종료조건) &#123;
+      break;
+    &#125;
+    //실행문
+    //증감식
+  &#125;</code></pre>
+</li>
+</ul>
+<h4 id="continue-문"><a href="#continue-문" class="headerlink" title="continue 문"></a>continue 문</h4><ul>
+<li><p>반복문을 다음 반복으로 건너뛴다</p>
+</li>
+<li><p>while 문의 경우 증감식이 실행되지 않을수 있다 </p>
+<pre><code>  while (조건식) &#123;
+    if (제어조건) &#123;
+      //증감식
+      continue;
+    &#125;
+    //실행문
+    //증감식
+  &#125;</code></pre>
+<h4 id="label"><a href="#label" class="headerlink" title="label"></a>label</h4></li>
+<li><p>중첩 반복문에서 어떤 반복문을 제어할지 결정한다. </p>
+<pre><code>  loop1: for (int i = 0; i &lt; 10; i++) &#123;
+     loop2: for (int j = 0; j &lt; 10; j++) &#123;
+      if (j == 3) &#123;
+        break;
+        // break loop1;
+        // break loop2;
+        // continue;
+        // continue loop1;
+        // continue loop2;
+      &#125;
+    &#125;
+  &#125;</code></pre>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://jeonghoonan.github.io/2020/08/29/post/08_29/" data-id="ckg26n1q000030ou98a4ne77v" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/08/30/post/08_30/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Study083020
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/08/28/post/08_28/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Study082820</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/05/post/post/">post</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/25/post/09_25/">Study092520</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/24/post/09_24/">Study092420</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/22/post/09_22/">Study092220</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/20/post/09_20/">New Start</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 JeongHoon<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
